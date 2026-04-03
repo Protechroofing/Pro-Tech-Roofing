@@ -1,20 +1,8 @@
 <!DOCTYPE html>
 
 <html lang="en">
-<head> <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16607386615"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
+<head>
 
-gtag('config', 'AW-16607386615');
-
-function trackConversion(){
-gtag('event','conversion',{
-'send_to':'AW-16607386615/YOUR_LABEL'
-});
-}
-</script>onclick="trackConversion()"onsubmit="trackConversion()"
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -22,18 +10,34 @@ gtag('event','conversion',{
 
 <meta name="description" content="Pro-Tech Roofing Contractor & Assoc Inc. provides metal roofing, tile roofing, roof repairs and commercial roofing in Miami and Broward. Licensed & Insured. Call (305) 979-3688.">
 
+<!-- GOOGLE TAG (FIXED POSITION) -->
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16607386615"></script>
+
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'AW-16607386615');
+
+/* ⚠️ REPLACE WITH YOUR REAL LABEL */
+function trackConversion(){
+gtag('event','conversion',{
+'send_to':'AW-16607386615/XXXXXXXXXX'
+});
+}
+</script>
+
 <script src="https://cdn.tailwindcss.com"></script>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 
 <style>
-
 :root{
 --brand-green:#1a5a1a;
 --brand-yellow:#ffd700;
 }
-
-/* HERO BACKGROUND IMAGE — METAL ROOF HOME */
 
 .hero-section{
 background-image:linear-gradient(rgba(0,0,0,0.45),rgba(0,0,0,0.65)),
@@ -42,8 +46,6 @@ background-size:cover;
 background-position:center;
 background-repeat:no-repeat;
 }
-
-/* SHINING TEXT */
 
 .gradient-text{
 background:linear-gradient(to right,#228b22 20%,#ffd700 40%,#ffd700 60%,#228b22 80%);
@@ -62,8 +64,6 @@ to{background-position:200% center;}
 text-shadow:2px 2px 10px rgba(0,0,0,0.9);
 }
 
-/* CALL BUTTON */
-
 .call-btn{
 position:fixed;
 bottom:25px;
@@ -80,7 +80,6 @@ font-size:34px;
 box-shadow:0 6px 25px rgba(0,0,0,0.4);
 z-index:9999;
 }
-
 </style>
 
 </head>
@@ -89,42 +88,38 @@ z-index:9999;
 
 <!-- CALL BUTTON -->
 
-<a href="tel:3059793688" class="call-btn">
+<a href="tel:3059793688" onclick="trackConversion()" class="call-btn">
 <i class="fas fa-phone-alt"></i>
 </a>
 
 <!-- TOP BAR -->
 
 <div class="bg-[#1a5a1a] text-white py-2 px-4 text-xs md:text-sm flex justify-between items-center font-bold border-b border-yellow-500">
-
 <div class="flex items-center gap-2">
 <i class="fas fa-map-marker-alt text-yellow-400"></i>
 <span>15820 SW 153 Ave Miami, FL</span>
 </div>
 
-<a href="tel:3059793688" class="flex items-center gap-2 hover:text-yellow-400">
+<a href="tel:3059793688" onclick="trackConversion()" class="flex items-center gap-2 hover:text-yellow-400">
 <i class="fas fa-phone-alt text-yellow-400"></i>
 (305) 979-3688
 </a>
-
 </div>
 
-<!-- NAVIGATION -->
+<!-- NAV -->
 
 <nav class="bg-white shadow-lg sticky top-0 z-50 py-4">
-
 <div class="container mx-auto px-4 flex justify-between items-center">
 
-<div class="flex flex-col">
+<!-- ✅ FIXED LOGO ALIGNMENT -->
 
-<h1 class="text-2xl md:text-3xl font-black text-[#1a5a1a] leading-none uppercase">
+<div class="flex items-center gap-3">
+<h1 class="text-2xl md:text-3xl font-black text-[#1a5a1a] uppercase whitespace-nowrap">
 PRO-TECH <span class="text-yellow-500">ROOFING</span>
 </h1>
-
-<p class="text-[9px] font-bold text-gray-500 tracking-[0.2em] uppercase mt-1">
+<p class="text-[10px] font-bold text-gray-500 uppercase tracking-widest">
 Contractor & Assoc Inc.
 </p>
-
 </div>
 
 <a href="https://www.instagram.com/protechroofing" target="_blank" class="text-pink-600 text-2xl hover:scale-110 transition">
@@ -137,170 +132,45 @@ Contractor & Assoc Inc.
 <!-- HERO -->
 
 <header class="hero-section py-28 md:py-36 text-center text-white px-4">
-
 <div class="container mx-auto max-w-5xl">
-
 <h2 class="text-5xl md:text-8xl gradient-text mb-4 uppercase tracking-tighter">
 Building Trust
 </h2>
-
 <p class="text-2xl md:text-4xl mb-12 font-black italic text-white text-shadow uppercase">
 In Your Neighborhood
 </p>
-
-<div class="flex flex-wrap justify-center gap-10 opacity-90">
-
-<div class="text-center">
-<i class="fas fa-home text-4xl mb-2 text-yellow-400"></i>
-<p class="text-xs font-bold uppercase tracking-widest">Residential</p>
 </div>
-
-<div class="text-center">
-<i class="fas fa-city text-4xl mb-2 text-yellow-400"></i>
-<p class="text-xs font-bold uppercase tracking-widest">Commercial</p>
-</div>
-
-<div class="text-center">
-<i class="fas fa-tools text-4xl mb-2 text-yellow-400"></i>
-<p class="text-xs font-bold uppercase tracking-widest">Repairs</p>
-</div>
-
-</div>
-
-</div>
-
 </header>
 
-<!-- TRUST BADGES -->
-
-<div class="bg-gray-100 py-16 border-b">
-
-<div class="container mx-auto px-4 flex flex-wrap justify-center gap-16 text-center">
-
-<div class="flex flex-col items-center">
-<i class="fas fa-shield-alt text-5xl text-green-700 mb-2"></i>
-<span class="font-bold text-sm uppercase">Licensed & Insured</span>
-</div>
-
-<div class="flex flex-col items-center">
-<i class="fas fa-history text-5xl text-yellow-600 mb-2"></i>
-<span class="font-bold text-sm uppercase">20 Years Experience</span>
-</div>
-
-<div class="flex flex-col items-center">
-<i class="fas fa-award text-5xl text-blue-800 mb-2"></i>
-<span class="font-bold text-sm uppercase">A+ BBB Rated</span>
-</div>
-
-</div>
-
-</div>
-
-<!-- SERVICES -->
-
-<section class="py-20 bg-white text-center">
-
-<h3 class="text-4xl font-black text-green-800 mb-12 uppercase">
-Our Roofing Services
-</h3>
-
-<div class="container mx-auto grid md:grid-cols-3 gap-10 px-6">
-
-<div class="shadow-xl p-8 rounded-xl border">
-<i class="fas fa-home text-5xl text-yellow-500 mb-4"></i>
-<h4 class="font-bold text-xl mb-3">Residential Roofing</h4>
-<p>Tile, shingle and metal roof installations across Miami-Dade and Broward.</p>
-</div>
-
-<div class="shadow-xl p-8 rounded-xl border">
-<i class="fas fa-building text-5xl text-yellow-500 mb-4"></i>
-<h4 class="font-bold text-xl mb-3">Commercial Roofing</h4>
-<p>Flat roofs, waterproof coatings and commercial roofing systems.</p>
-</div>
-
-<div class="shadow-xl p-8 rounded-xl border">
-<i class="fas fa-tools text-5xl text-yellow-500 mb-4"></i>
-<h4 class="font-bold text-xl mb-3">Roof Repairs</h4>
-<p>Leak detection, emergency repairs and roof maintenance services.</p>
-</div>
-
-</div>
-
-</section>
-
-<!-- QUOTE FORM -->
+<!-- QUOTE -->
 
 <section class="py-20 px-4 bg-gray-100">
-
 <div class="container mx-auto max-w-4xl bg-white shadow-2xl rounded-2xl overflow-hidden flex flex-wrap border">
 
 <div class="w-full md:w-1/2 bg-[#1a5a1a] p-10 text-white flex flex-col justify-center">
-
 <h3 class="text-3xl font-bold mb-4 uppercase italic">Request a Quote</h3>
 
-<p class="mb-6 opacity-80 font-bold">
-Serving Miami & Broward with premium roofing solutions.
-</p>
-
-<div class="space-y-4 font-bold">
-
-<a href="tel:3059793688" class="flex items-center gap-3 text-xl hover:text-yellow-400">
-<i class="fas fa-phone-alt text-yellow-500"></i>
+<a href="tel:3059793688" onclick="trackConversion()" class="text-xl font-bold hover:text-yellow-400">
 (305) 979-3688
 </a>
-
-<p class="flex items-center gap-3">
-<i class="fas fa-envelope text-yellow-500"></i>
-Protechroofing03@gmail.com
-</p>
-
-</div>
-
 </div>
 
 <div class="w-full md:w-1/2 p-10 bg-gray-50">
-
-<form action="https://formsubmit.co/Protechroofing03@gmail.com" method="POST" class="space-y-4">
+<form action="https://formsubmit.co/Protechroofing03@gmail.com" method="POST" onsubmit="trackConversion()" class="space-y-4">
 
 <input type="text" name="name" placeholder="Full Name" required class="w-full p-4 border-2 rounded-lg">
-
 <input type="text" name="address" placeholder="Property Address" required class="w-full p-4 border-2 rounded-lg">
-
 <input type="tel" name="phone" placeholder="Phone Number" required class="w-full p-4 border-2 rounded-lg">
 
-<button type="submit" class="w-full bg-gradient-to-r from-green-800 to-yellow-500 text-white font-black py-5 rounded-lg shadow-xl hover:brightness-110 uppercase tracking-widest">
+<button type="submit" class="w-full bg-gradient-to-r from-green-800 to-yellow-500 text-white font-black py-5 rounded-lg uppercase">
 Submit My Request
 </button>
 
 </form>
-
 </div>
 
 </div>
-
 </section>
-
-<!-- FOOTER -->
-
-<footer class="bg-gray-900 text-white py-12 text-center border-t-4 border-yellow-500">
-
-<h4 class="font-black text-2xl mb-2 tracking-widest uppercase italic">
-PRO-TECH <span class="text-yellow-500">ROOFING</span>
-</h4>
-
-<p class="text-gray-500 text-xs mb-8 uppercase tracking-widest">
-Contractor & Assoc Inc. Lic. # CCC1329196
-</p>
-
-<a href="https://www.instagram.com/protechroofing" target="_blank" class="text-4xl text-gray-400 hover:text-pink-600 transition">
-<i class="fab fa-instagram"></i>
-</a>
-
-<p class="text-gray-600 text-[10px] mt-10 uppercase font-bold tracking-[0.3em]">
-© 2026 Pro-Tech Roofing Contractor & Assoc Inc.
-</p>
-
-</footer>
 
 </body>
 </html>
