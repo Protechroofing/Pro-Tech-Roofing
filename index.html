@@ -10,7 +10,7 @@
 
 <meta name="description" content="Pro-Tech Roofing Contractor & Assoc Inc. provides metal roofing, tile roofing, roof repairs and commercial roofing in Miami and Broward. Licensed & Insured. Call (305) 979-3688.">
 
-<!-- GOOGLE TAG -->
+<!-- ✅ GOOGLE TAG (TOP PRIORITY FOR DETECTION) -->
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16607386615"></script>
 
@@ -18,15 +18,21 @@
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
 gtag('js', new Date());
-
 gtag('config', 'AW-16607386615');
+</script>
 
-/* CONVERSION FUNCTION */
+<!-- ✅ CONVERSION TRACKING -->
+
+<script>
 function gtag_report_conversion(callback) {
-  gtag('event', 'conversion', {
-    'send_to': 'AW-16607386615/AbC123xYz456',
-    'event_callback': callback
-  });
+  if (typeof gtag !== "undefined") {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-16607386615/AbC123xYz456',
+      'event_callback': callback
+    });
+  } else {
+    if (callback) callback();
+  }
 }
 </script>
 
@@ -225,7 +231,6 @@ Submit My Request
 <script>
 document.getElementById("quoteForm").addEventListener("submit", function(e){
   e.preventDefault();
-
   var form = this;
 
   gtag_report_conversion(function(){
@@ -242,3 +247,4 @@ document.getElementById("quoteForm").addEventListener("submit", function(e){
 
 </body>
 </html>
+
