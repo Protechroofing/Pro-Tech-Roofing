@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-Upload ONLY: thankyou.html
-(download it from the files shared above)
 <!-- GOOGLE ADS CONVERSION TRACKING — fires on thank you page load -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-16607386615"></script>
 <script>
@@ -353,7 +351,7 @@ h1 {
   </a>
 
   <!-- BACK LINK -->
-  <a href="https://protechroofing.github.io/Pro-Tech-Roofing/" class="back-link">
+  <a href="https://protechroofing.github.io/" class="back-link">
     <i class="fa-solid fa-arrow-left"></i> Back to website
   </a>
 
