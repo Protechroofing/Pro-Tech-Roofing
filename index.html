@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
 <!-- ================================================
      GOOGLE ADS CONVERSION TRACKING
      Tag: AW-16607386615
@@ -13,7 +12,6 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'AW-16607386615');
-
   function gtagReportCallConversion(url) {
     var callback = function() {
       if (typeof url !== 'undefined') { window.location = url; }
@@ -24,25 +22,21 @@
     });
     return false;
   }
-
   function gtagReportFormConversion() {
     gtag('event', 'conversion', {
       'send_to': 'AW-16607386615/form_conversion'
     });
   }
 </script>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Pro-Tech Roofing Contractor &amp; Assoc Inc. | South Florida Roofing</title>
 <meta name="description" content="South Florida's trusted roofing experts. Residential &amp; commercial roofing, storm damage repair, and insurance claim assistance. Licensed &amp; Insured. Call (305) 979-3688.">
 <link rel="canonical" href="https://protechroofing.github.io/index.html">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
 <style>
 /* ── VARIABLES ───────────────────────────────── */
 :root {
@@ -58,10 +52,7 @@
   --text-mid:    #3d3d3d;
   --text-light:  #ffffff;
 }
-
-/* ── RESET & BASE ────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
 body {
   font-family: 'Barlow', sans-serif;
   background: var(--near-white);
@@ -69,28 +60,21 @@ body {
   font-size: 16px;
   line-height: 1.6;
 }
-
 h1, h2, h3, h4 {
   font-family: 'Bebas Neue', sans-serif;
   letter-spacing: 0.05em;
   line-height: 1.1;
 }
-
 p { line-height: 1.7; }
-
 /* ── FIXED CALL BUTTON ───────────────────────── */
 .call-btn {
   position: fixed;
-  bottom: 28px;
-  right: 28px;
+  bottom: 28px; right: 28px;
   background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
   color: var(--white);
-  width: 68px;
-  height: 68px;
+  width: 68px; height: 68px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: flex; align-items: center; justify-content: center;
   font-size: 24px;
   z-index: 9999;
   text-decoration: none;
@@ -103,7 +87,6 @@ p { line-height: 1.7; }
   70%  { box-shadow: 0 0 0 16px rgba(245,200,0,0); }
   100% { box-shadow: 0 0 0 0 rgba(245,200,0,0); }
 }
-
 /* ── HERO ────────────────────────────────────── */
 .hero-section {
   position: relative;
@@ -114,7 +97,6 @@ p { line-height: 1.7; }
   background-position: center;
   padding: 60px 24px 80px;
 }
-
 .gradient-text {
   background: linear-gradient(90deg, #4cca4c 0%, var(--gold) 50%, #4cca4c 100%);
   -webkit-background-clip: text;
@@ -122,276 +104,197 @@ p { line-height: 1.7; }
   background-clip: text;
   display: block;
 }
-
 .badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
+  display: inline-flex; align-items: center; gap: 8px;
   background: rgba(255,255,255,0.12);
   border: 1.5px solid rgba(245,200,0,0.5);
   border-radius: 100px;
   padding: 8px 20px;
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: var(--white);
-  letter-spacing: 0.03em;
+  font-size: 0.88rem; font-weight: 700;
+  color: var(--white); letter-spacing: 0.03em;
 }
-
 .cta-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+  display: inline-flex; align-items: center; gap: 10px;
   background: var(--gold);
   color: var(--green-dark);
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.35rem;
-  letter-spacing: 0.07em;
+  font-size: 1.35rem; letter-spacing: 0.07em;
   padding: 15px 42px;
   border-radius: 100px;
-  text-decoration: none;
-  font-weight: 900;
+  text-decoration: none; font-weight: 900;
   box-shadow: 0 4px 20px rgba(245,200,0,0.4);
   transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
-  border: none;
-  cursor: pointer;
+  border: none; cursor: pointer;
 }
 .cta-btn:hover {
   background: var(--gold-lite);
   transform: translateY(-2px);
   box-shadow: 0 8px 28px rgba(245,200,0,0.5);
 }
-
 /* ── SECTION WRAPPERS ────────────────────────── */
-.section-white   { background: var(--white);      padding: 80px 24px; }
-.section-light   { background: var(--light-gray); padding: 80px 24px; }
-.section-green   { background: var(--green-dark); padding: 80px 24px; }
-.section-mid     { background: var(--green-mid);  padding: 64px 24px; }
-
-.section-title-dark {
-  font-size: clamp(2rem, 5vw, 3rem);
-  color: var(--green-dark);
-  text-align: center;
-  margin-bottom: 12px;
-}
-.section-title-light {
-  font-size: clamp(2rem, 5vw, 3rem);
-  color: var(--gold);
-  text-align: center;
-  margin-bottom: 12px;
-}
-.section-sub-dark  { text-align:center; color: var(--text-mid);  font-size:1.05rem; margin-bottom:3rem; }
-.section-sub-light { text-align:center; color: rgba(255,255,255,0.82); font-size:1.05rem; margin-bottom:3rem; }
-
-.inner { max-width: 1080px; margin: 0 auto; }
-.inner-sm { max-width: 860px; margin: 0 auto; }
-
+.section-white { background: var(--white);      padding: 80px 24px; }
+.section-light { background: var(--light-gray); padding: 80px 24px; }
+.section-green { background: var(--green-dark); padding: 80px 24px; }
+.section-mid   { background: var(--green-mid);  padding: 64px 24px; }
+.section-title-dark  { font-size:clamp(2rem,5vw,3rem); color:var(--green-dark); text-align:center; margin-bottom:12px; }
+.section-title-light { font-size:clamp(2rem,5vw,3rem); color:var(--gold);       text-align:center; margin-bottom:12px; }
+.section-sub-dark  { text-align:center; color:var(--text-mid);        font-size:1.05rem; margin-bottom:3rem; }
+.section-sub-light { text-align:center; color:rgba(255,255,255,0.82); font-size:1.05rem; margin-bottom:3rem; }
+.inner    { max-width:1080px; margin:0 auto; }
+.inner-sm { max-width:860px;  margin:0 auto; }
 /* ── SERVICE CARDS ───────────────────────────── */
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.6rem;
 }
-
 .service-card {
   background: var(--white);
-  border-radius: 14px;
-  padding: 2.2rem 1.8rem;
+  border-radius: 14px; padding: 2.2rem 1.8rem;
   text-align: center;
   border: 1.5px solid #e0eae0;
   border-top: 5px solid var(--gold);
   box-shadow: 0 3px 16px rgba(0,0,0,0.07);
   transition: transform 0.22s, box-shadow 0.22s;
 }
-.service-card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 10px 32px rgba(0,0,0,0.13);
-}
-
+.service-card:hover { transform:translateY(-6px); box-shadow:0 10px 32px rgba(0,0,0,0.13); }
 .icon-circle {
-  width: 72px;
-  height: 72px;
-  border-radius: 50%;
-  background: var(--green-mid);
-  color: var(--gold);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 28px;
-  margin-bottom: 1.1rem;
+  width:72px; height:72px; border-radius:50%;
+  background: var(--green-mid); color: var(--gold);
+  display: inline-flex; align-items:center; justify-content:center;
+  font-size:28px; margin-bottom:1.1rem;
   box-shadow: 0 4px 14px rgba(26,92,26,0.3);
 }
-
-.service-card h3 {
-  font-size: 1.35rem;
-  color: var(--green-dark);
-  margin-bottom: 0.6rem;
-}
-
-.service-card p {
-  color: var(--text-mid);
-  font-size: 0.95rem;
-}
-
+.service-card h3 { font-size:1.35rem; color:var(--green-dark); margin-bottom:0.6rem; }
+.service-card p  { color:var(--text-mid); font-size:0.95rem; }
 /* ── WHY CARDS ───────────────────────────────── */
 .why-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 1.4rem;
 }
-
 .why-card {
   background: rgba(255,255,255,0.07);
   border: 1.5px solid rgba(245,200,0,0.3);
-  border-radius: 14px;
-  padding: 1.8rem;
-  display: flex;
-  align-items: flex-start;
-  gap: 1.1rem;
+  border-radius: 14px; padding: 1.8rem;
+  display: flex; align-items:flex-start; gap:1.1rem;
   transition: background 0.2s, transform 0.2s;
 }
-.why-card:hover {
-  background: rgba(255,255,255,0.12);
-  transform: translateY(-4px);
-}
-
+.why-card:hover { background:rgba(255,255,255,0.12); transform:translateY(-4px); }
 .why-icon {
-  width: 52px;
-  height: 52px;
-  min-width: 52px;
-  border-radius: 12px;
+  width:52px; height:52px; min-width:52px;
+  border-radius:12px;
   background: rgba(245,200,0,0.15);
   border: 2px solid var(--gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
-  color: var(--gold);
+  display:flex; align-items:center; justify-content:center;
+  font-size:22px; color:var(--gold);
 }
-
-.why-card h3 {
-  font-size: 1.15rem;
-  color: var(--gold);
-  margin-bottom: 0.35rem;
-}
-
-.why-card p {
-  font-size: 0.92rem;
-  color: rgba(255,255,255,0.88);
-  line-height: 1.65;
-}
-
+.why-card h3 { font-size:1.15rem; color:var(--gold);           margin-bottom:0.35rem; }
+.why-card p  { font-size:0.92rem; color:rgba(255,255,255,0.88); line-height:1.65; }
 /* ── REVIEW CARDS ────────────────────────────── */
 .review-card {
   background: var(--white);
   border-left: 5px solid var(--gold);
-  border-radius: 12px;
-  padding: 1.6rem 2rem;
+  border-radius: 12px; padding:1.6rem 2rem;
   box-shadow: 0 3px 14px rgba(0,0,0,0.07);
   text-align: left;
 }
-
-.review-card .stars { color: var(--gold); font-size: 1.1rem; margin-bottom: 0.6rem; }
-.review-card p      { color: var(--text-dark); font-size: 0.97rem; line-height: 1.65; }
-.review-card .reviewer { font-weight: 700; color: var(--green-mid); margin-top: 0.7rem; font-size: 0.88rem; }
-
+.review-card .stars    { color:var(--gold); font-size:1.1rem; margin-bottom:0.6rem; }
+.review-card p         { color:var(--text-dark); font-size:0.97rem; line-height:1.65; }
+.review-card .reviewer { font-weight:700; color:var(--green-mid); margin-top:0.7rem; font-size:0.88rem; }
 /* ── FORM ────────────────────────────────────── */
 .form-input {
-  width: 100%;
-  padding: 14px 18px;
-  border: 2px solid #cfd8cf;
-  border-radius: 10px;
-  font-family: 'Barlow', sans-serif;
-  font-size: 1rem;
-  color: var(--text-dark);
-  background: #f8fbf8;
-  transition: border-color 0.2s, background 0.2s;
+  width:100%; padding:14px 18px;
+  border:2px solid #cfd8cf; border-radius:10px;
+  font-family:'Barlow',sans-serif; font-size:1rem;
+  color:var(--text-dark); background:#f8fbf8;
+  transition:border-color 0.2s, background 0.2s;
 }
-.form-input:focus {
-  outline: none;
-  border-color: var(--green-mid);
-  background: var(--white);
+.form-input:focus { outline:none; border-color:var(--green-mid); background:var(--white); }
+.form-input::placeholder { color:#7a927a; }
+/* select dropdown matches inputs */
+.form-select {
+  width:100%; padding:14px 18px;
+  border:2px solid #cfd8cf; border-radius:10px;
+  font-family:'Barlow',sans-serif; font-size:1rem;
+  color:var(--text-dark); background:#f8fbf8;
+  appearance:none; -webkit-appearance:none;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%231a5c1a' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;
+  background-position:right 18px center;
+  cursor:pointer;
+  transition:border-color 0.2s, background-color 0.2s;
 }
-.form-input::placeholder { color: #7a927a; }
+.form-select:focus { outline:none; border-color:var(--green-mid); background-color:var(--white); }
 
+/* field label */
+.form-label {
+  display:block;
+  font-size:0.82rem;
+  font-weight:700;
+  color:var(--green-dark);
+  letter-spacing:0.05em;
+  margin-bottom:5px;
+  text-transform:uppercase;
+}
 .submit-btn {
-  width: 100%;
-  padding: 16px;
+  width:100%; padding:16px;
   background: var(--green-mid);
-  color: var(--white);
-  border: none;
-  border-radius: 10px;
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.3rem;
-  letter-spacing: 0.07em;
-  cursor: pointer;
-  transition: background 0.2s, transform 0.15s;
-  box-shadow: 0 4px 14px rgba(26,92,26,0.35);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+  color:var(--white); border:none; border-radius:10px;
+  font-family:'Bebas Neue',sans-serif; font-size:1.3rem; letter-spacing:0.07em;
+  cursor:pointer; transition:background 0.2s, transform 0.15s;
+  box-shadow:0 4px 14px rgba(26,92,26,0.35);
+  display:flex; align-items:center; justify-content:center; gap:10px;
 }
-.submit-btn:hover { background: var(--green-dark); transform: translateY(-1px); }
-
+.submit-btn:hover { background:var(--green-dark); transform:translateY(-1px); }
 /* ── INSTAGRAM PILL ──────────────────────────── */
 .ig-pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(255,255,255,0.1);
-  border: 1.5px solid rgba(245,200,0,0.45);
-  border-radius: 100px;
-  padding: 9px 20px;
-  font-weight: 700;
-  font-size: 0.9rem;
-  color: var(--white);
-  text-decoration: none;
-  transition: background 0.2s;
+  display:inline-flex; align-items:center; gap:8px;
+  background:rgba(255,255,255,0.1);
+  border:1.5px solid rgba(245,200,0,0.45);
+  border-radius:100px; padding:9px 20px;
+  font-weight:700; font-size:0.9rem;
+  color:var(--white); text-decoration:none;
+  transition:background 0.2s;
 }
-.ig-pill:hover { background: rgba(255,255,255,0.18); }
-
+.ig-pill:hover { background:rgba(255,255,255,0.18); }
 /* ── ANIMATIONS ──────────────────────────────── */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(28px); }
-  to   { opacity: 1; transform: translateY(0); }
+  from { opacity:0; transform:translateY(28px); }
+  to   { opacity:1; transform:translateY(0); }
 }
-.fu  { animation: fadeUp 0.65s ease both; }
-.d1  { animation-delay: 0.1s; }
-.d2  { animation-delay: 0.2s; }
-.d3  { animation-delay: 0.3s; }
-.d4  { animation-delay: 0.4s; }
-.d5  { animation-delay: 0.5s; }
-
-/* ── UTILITY ─────────────────────────────────── */
-.text-center { text-align: center; }
+.fu { animation:fadeUp 0.65s ease both; }
+.d1 { animation-delay:0.1s; }
+.d2 { animation-delay:0.2s; }
+.d3 { animation-delay:0.3s; }
+.d4 { animation-delay:0.4s; }
+.d5 { animation-delay:0.5s; }
+.text-center { text-align:center; }
 .flex-center { display:flex; align-items:center; justify-content:center; }
-.flex-wrap   { flex-wrap: wrap; }
-.gap-3       { gap: 0.75rem; }
-.gap-4       { gap: 1rem; }
-.mb-2        { margin-bottom: 0.5rem; }
-.mb-4        { margin-bottom: 1rem; }
-.mb-8        { margin-bottom: 2rem; }
+.flex-wrap   { flex-wrap:wrap; }
+.gap-3       { gap:0.75rem; }
+.gap-4       { gap:1rem; }
+.mb-2        { margin-bottom:0.5rem; }
+.mb-4        { margin-bottom:1rem; }
+.mb-8        { margin-bottom:2rem; }
 </style>
 </head>
-
 <body>
 
-<!-- ── FIXED CALL BUTTON ──────────────────────── -->
+<!-- FIXED CALL BUTTON -->
 <a href="tel:3059793688" class="call-btn" title="Call Pro-Tech Roofing"
    onclick="return gtagReportCallConversion('tel:3059793688');">
   <i class="fa-solid fa-phone-volume"></i>
 </a>
 
-
-<!-- ══════════════════════════════════════════════
-     HERO
-══════════════════════════════════════════════ -->
+<!-- HERO -->
 <header class="hero-section">
 <div class="inner">
 
-  <!-- TOP BAR -->
-  <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:3rem;" class="fu">
-    <div>
+  <!-- TOP BAR: logo + company name + instagram -->
+  <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:1rem;margin-bottom:2.5rem;" class="fu">
+    
+    <div style="text-align:center;">
       <p style="font-family:'Bebas Neue',sans-serif;font-size:1.5rem;letter-spacing:0.06em;color:#ffffff;">
         Pro-Tech Roofing Contractor &amp; Assoc Inc.
       </p>
@@ -417,15 +320,11 @@ p { line-height: 1.7; }
     <p class="fu d3" style="font-size:1.08rem;color:rgba(255,255,255,0.88);max-width:660px;margin:0 auto 2.4rem;line-height:1.75;">
       South Florida's trusted roofing experts for residential and commercial roofing, storm damage repair, and insurance claims assistance — protecting your home from the top down. Done right the first time.
     </p>
-
-    <!-- BADGES -->
     <div class="flex-center flex-wrap gap-3 fu d4" style="margin-bottom:2.5rem;">
       <span class="badge"><i class="fa-solid fa-trophy" style="color:var(--gold);"></i> 20+ Years Experience</span>
       <span class="badge"><i class="fa-solid fa-shield-halved" style="color:var(--gold);"></i> Licensed &amp; Insured</span>
       <span class="badge"><i class="fa-solid fa-star" style="color:var(--gold);"></i> 5-Star Rated</span>
     </div>
-
-    <!-- CTA -->
     <div class="fu d5">
       <a href="tel:3059793688" class="cta-btn"
          onclick="return gtagReportCallConversion('tel:3059793688');">
@@ -437,62 +336,47 @@ p { line-height: 1.7; }
 </div>
 </header>
 
-
-<!-- ══════════════════════════════════════════════
-     SERVICES  —  white background, dark text
-══════════════════════════════════════════════ -->
+<!-- SERVICES -->
 <section class="section-white">
 <div class="inner">
   <h2 class="section-title-dark">Roofing Services</h2>
   <p class="section-sub-dark">Full-service roofing solutions for residential and commercial properties</p>
-
   <div class="services-grid">
-
     <div class="service-card">
       <div class="icon-circle"><i class="fa-solid fa-house-chimney-window"></i></div>
       <h3>Residential Roofing</h3>
       <p>New roofs, replacements, and repairs for all home roof types including metal, tile, shingles, and flat.</p>
     </div>
-
     <div class="service-card">
       <div class="icon-circle"><i class="fa-solid fa-screwdriver-wrench"></i></div>
       <h3>Roof Repairs</h3>
       <p>Leak detection, repairs, and maintenance for all roof types — fast and done right.</p>
     </div>
-
     <div class="service-card">
       <div class="icon-circle"><i class="fa-solid fa-city"></i></div>
       <h3>Commercial Roofing</h3>
       <p>Flat roofs and modified bitumen systems for commercial and industrial properties.</p>
     </div>
-
     <div class="service-card">
       <div class="icon-circle"><i class="fa-solid fa-file-shield"></i></div>
       <h3>Insurance Claims</h3>
       <p>We document damage and provide the right paperwork to fully support your insurance claim.</p>
     </div>
-
     <div class="service-card">
       <div class="icon-circle"><i class="fa-solid fa-wind"></i></div>
       <h3>Storm Damage Repair</h3>
       <p>Emergency repairs and full restorations after hurricanes, wind, or hail damage.</p>
     </div>
-
   </div>
 </div>
 </section>
 
-
-<!-- ══════════════════════════════════════════════
-     WHY CHOOSE US  —  dark green bg, white+gold text
-══════════════════════════════════════════════ -->
+<!-- WHY CHOOSE US -->
 <section class="section-green">
 <div class="inner">
   <h2 class="section-title-light">Why Choose Pro-Tech?</h2>
   <p class="section-sub-light">Trusted by homeowners and businesses across South Florida</p>
-
   <div class="why-grid">
-
     <div class="why-card">
       <div class="why-icon"><i class="fa-solid fa-id-badge"></i></div>
       <div>
@@ -500,7 +384,6 @@ p { line-height: 1.7; }
         <p>Fully licensed in Florida with liability and workers' comp coverage on every job.</p>
       </div>
     </div>
-
     <div class="why-card">
       <div class="why-icon"><i class="fa-solid fa-tags"></i></div>
       <div>
@@ -508,7 +391,6 @@ p { line-height: 1.7; }
         <p>No hidden fees. Free detailed written estimates before any work begins.</p>
       </div>
     </div>
-
     <div class="why-card">
       <div class="why-icon"><i class="fa-solid fa-truck-fast"></i></div>
       <div>
@@ -516,7 +398,6 @@ p { line-height: 1.7; }
         <p>Storm damage won't wait — neither do we. We respond fast when you need us most.</p>
       </div>
     </div>
-
     <div class="why-card">
       <div class="why-icon"><i class="fa-solid fa-handshake-simple"></i></div>
       <div>
@@ -524,48 +405,36 @@ p { line-height: 1.7; }
         <p>We guide you through the entire claim process with proper photos and documentation.</p>
       </div>
     </div>
-
   </div>
 </div>
 </section>
 
-
-<!-- ══════════════════════════════════════════════
-     REVIEWS  —  light gray bg, dark text
-══════════════════════════════════════════════ -->
+<!-- REVIEWS -->
 <section class="section-light">
 <div class="inner-sm">
   <h2 class="section-title-dark">What Our Customers Say</h2>
   <p class="section-sub-dark">Trusted by homeowners and businesses across South Florida</p>
-
   <div style="display:flex;flex-direction:column;gap:1.2rem;">
-
     <div class="review-card">
       <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
       <p>"Professional, fast, and clean work. They replaced our entire roof after hurricane damage and the crew was incredible. Highly recommend!"</p>
       <p class="reviewer"><i class="fa-solid fa-circle-check" style="color:var(--green-mid);margin-right:5px;"></i>Miami Homeowner</p>
     </div>
-
     <div class="review-card">
       <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
       <p>"Handled my insurance claim perfectly. They documented everything and made the whole process completely stress-free."</p>
       <p class="reviewer"><i class="fa-solid fa-circle-check" style="color:var(--green-mid);margin-right:5px;"></i>Homestead Resident</p>
     </div>
-
     <div class="review-card">
       <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
       <p>"Best roofing company in Miami. Honest, reliable, and they stand behind their work. Will definitely use them again."</p>
       <p class="reviewer"><i class="fa-solid fa-circle-check" style="color:var(--green-mid);margin-right:5px;"></i>Coral Gables Customer</p>
     </div>
-
   </div>
 </div>
 </section>
 
-
-<!-- ══════════════════════════════════════════════
-     CTA BANNER  —  mid green bg, white+gold text
-══════════════════════════════════════════════ -->
+<!-- CTA BANNER -->
 <section class="section-mid text-center">
   <h2 style="font-size:clamp(2rem,5vw,3rem);color:var(--gold);margin-bottom:0.5rem;">Ready to Protect Your Roof?</h2>
   <p style="color:rgba(255,255,255,0.9);font-size:1.1rem;margin-bottom:2rem;">Free, no-obligation estimates. We serve all of South Florida.</p>
@@ -575,41 +444,35 @@ p { line-height: 1.7; }
   </a>
 </section>
 
-
-<!-- ══════════════════════════════════════════════
-     QUOTE FORM  —  white bg, dark text, green left panel
-══════════════════════════════════════════════ -->
+<!-- QUOTE FORM -->
 <section class="section-white">
 <div style="max-width:900px;margin:0 auto;background:var(--white);border-radius:18px;overflow:hidden;box-shadow:0 10px 48px rgba(0,0,0,0.13);display:flex;flex-wrap:wrap;">
 
   <!-- LEFT: contact info on dark green -->
   <div style="flex:1;min-width:280px;background:var(--green-dark);padding:3rem 2.5rem;">
     <h3 style="font-size:2.2rem;color:var(--gold);margin-bottom:1.4rem;">Request a Quote</h3>
-
     <p style="color:var(--white);font-size:1rem;display:flex;align-items:center;gap:12px;margin-bottom:1rem;">
       <span style="width:36px;height:36px;border-radius:50%;background:rgba(245,200,0,0.15);border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
         <i class="fa-solid fa-phone" style="color:var(--gold);font-size:14px;"></i>
       </span>
       (305) 979-3688
     </p>
-
-    <p style="color:var(--white);font-size:0.95rem;display:flex;align-items:center;gap:12px;margin-bottom:2rem;">
+    <p style="color:var(--white);font-size:0.95rem;display:flex;align-items:center;gap:12px;margin-bottom:2rem;word-break:break-all;">
       <span style="width:36px;height:36px;border-radius:50%;background:rgba(245,200,0,0.15);border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
         <i class="fa-solid fa-envelope" style="color:var(--gold);font-size:14px;"></i>
       </span>
       protechroofing03@gmail.com
     </p>
-
     <hr style="border:none;border-top:1px solid rgba(245,200,0,0.2);margin-bottom:1.5rem;">
-
     <p style="color:rgba(255,255,255,0.82);font-size:0.92rem;display:flex;align-items:center;gap:10px;margin-bottom:0.9rem;">
       <i class="fa-solid fa-clock" style="color:var(--gold);width:16px;"></i>
       Mon – Sat &nbsp; 7:00 AM – 6:00 PM
     </p>
-    <p style="color:rgba(255,255,255,0.82);font-size:0.92rem;display:flex;align-items:center;gap:10px;">
+    <p style="color:rgba(255,255,255,0.82);font-size:0.92rem;display:flex;align-items:center;gap:10px;margin-bottom:2rem;">
       <i class="fa-solid fa-location-dot" style="color:var(--gold);width:16px;"></i>
       Serving all of South Florida
     </p>
+    
   </div>
 
   <!-- RIGHT: form on white -->
@@ -619,45 +482,85 @@ p { line-height: 1.7; }
           method="POST"
           style="display:flex;flex-direction:column;gap:1rem;"
           onsubmit="gtagReportFormConversion();">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="hidden" name="_next" value="https://protechroofing.github.io/thankyou.html">
 
-      <input type="text"  name="name"    placeholder="Full Name"        required class="form-input">
-      <input type="text"  name="address" placeholder="Property Address" required class="form-input">
-      <input type="tel"   name="phone"   placeholder="Phone Number"     required class="form-input">
-      <input type="email" name="email"   placeholder="Email Address"    required class="form-input">
+      <input type="hidden" name="_captcha"      value="false">
+      <input type="hidden" name="_next"         value="https://protechroofing.github.io/thankyou.html">
+      <input type="hidden" name="_subject"      value="New Roof Quote Request - Pro-Tech Roofing">
+      <input type="hidden" name="_autoresponse" value="Thank you for contacting Pro-Tech Roofing! We received your request and will call you within 1 business hour. - Pro-Tech Roofing Team (305) 979-3688">
+
+      <div>
+        <label class="form-label"><i class="fa-solid fa-user" style="margin-right:5px;color:var(--green-mid);"></i>Full Name</label>
+        <input type="text" name="name" placeholder="Your full name" required class="form-input">
+      </div>
+
+      <div>
+        <label class="form-label"><i class="fa-solid fa-location-dot" style="margin-right:5px;color:var(--green-mid);"></i>Property Address</label>
+        <input type="text" name="address" placeholder="Street address, city, zip" required class="form-input">
+      </div>
+
+      <div>
+        <label class="form-label"><i class="fa-solid fa-phone" style="margin-right:5px;color:var(--green-mid);"></i>Phone Number</label>
+        <input type="tel" name="phone" placeholder="(305) 000-0000" required class="form-input">
+      </div>
+
+      <div>
+        <label class="form-label"><i class="fa-solid fa-envelope" style="margin-right:5px;color:var(--green-mid);"></i>Email Address</label>
+        <input type="email" name="email" placeholder="you@email.com" required class="form-input">
+      </div>
+
+      <div>
+        <label class="form-label"><i class="fa-solid fa-building" style="margin-right:5px;color:var(--green-mid);"></i>Number of Stories</label>
+        <select name="stories" required class="form-select">
+          <option value="" disabled selected>Select number of stories</option>
+          <option value="1-Story">1 Story</option>
+          <option value="2-Story">2 Stories</option>
+          <option value="3+Story">3+ Stories / Commercial</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="form-label"><i class="fa-solid fa-list-check" style="margin-right:5px;color:var(--green-mid);"></i>Type of Roofing Service Needed</label>
+        <select name="service_type" required class="form-select">
+          <option value="" disabled selected>Select your roofing issue or service</option>
+          <option value="Roof Leak Repair">Roof Leak Repair</option>
+          <option value="Roof Replacement">Roof Replacement</option>
+          <option value="New Roof Installation">New Roof Installation</option>
+          <option value="Storm / Hurricane Damage">Storm / Hurricane Damage</option>
+          <option value="Fascia Board Damage">Fascia Board Damage</option>
+          <option value="Soffit Damage">Soffit Damage</option>
+          <option value="Emergency Service">Emergency Service</option>
+        </select>
+      </div>
 
       <button type="submit" class="submit-btn">
         <i class="fa-solid fa-paper-plane"></i> Submit Request
       </button>
+
+      <p style="font-size:0.78rem;color:#999;text-align:center;margin-top:0.25rem;">
+        <i class="fa-solid fa-lock" style="margin-right:4px;"></i>Your information is private and will never be shared.
+      </p>
+
     </form>
   </div>
 
 </div>
 </section>
 
-
-<!-- ══════════════════════════════════════════════
-     FOOTER  —  darkest green, gold accents
-══════════════════════════════════════════════ -->
+<!-- FOOTER -->
 <footer style="background:var(--green-dark);color:var(--white);text-align:center;padding:3.5rem 1.5rem;">
-
+  
   <p style="font-family:'Bebas Neue',sans-serif;font-size:1.6rem;color:var(--gold);letter-spacing:0.06em;margin-bottom:0.4rem;">
     Pro-Tech Roofing Contractor &amp; Assoc Inc.
   </p>
-
   <p style="font-size:0.9rem;color:rgba(255,255,255,0.78);max-width:520px;margin:0 auto 1.5rem;line-height:1.75;">
     Licensed, insured, and dedicated to protecting your home and business with quality craftsmanship you can count on.
   </p>
-
   <p style="font-size:0.88rem;color:rgba(255,255,255,0.65);margin-bottom:0.6rem;">
     Residential &nbsp;&bull;&nbsp; Commercial &nbsp;&bull;&nbsp; Repairs &nbsp;&bull;&nbsp; Storm Damage &nbsp;&bull;&nbsp; Insurance Claims
   </p>
-
   <p style="font-size:0.88rem;color:rgba(255,255,255,0.65);margin-bottom:1.6rem;">
     <i class="fa-regular fa-clock" style="margin-right:5px;color:var(--gold);"></i>Mon – Sat &nbsp; 7:00 AM – 6:00 PM
   </p>
-
   <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:1.5rem;margin-bottom:1.6rem;">
     <a href="tel:3059793688"
        onclick="return gtagReportCallConversion('tel:3059793688');"
@@ -670,11 +573,9 @@ p { line-height: 1.7; }
       <i class="fa-brands fa-instagram"></i> @protechroofingcontractor
     </a>
   </div>
-
   <p style="font-size:0.78rem;color:rgba(255,255,255,0.38);">
     &copy; Pro-Tech Roofing Contractor &amp; Assoc Inc. &nbsp;|&nbsp; License #CCC1329196
   </p>
-
 </footer>
 
 </body>
