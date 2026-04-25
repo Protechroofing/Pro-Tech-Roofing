@@ -1,6 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+     <!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- GOOGLE TAG -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=AW-16607386615"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-16607386615');
+
+/* CALL CONVERSION (REAL LABEL) */
+function gtagReportCallConversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+      'send_to': 'AW-16607386615/dU4FCLCiraIcEPe3gu89',
+      'value': 1.0,
+      'currency': 'USD',
+      'event_callback': callback
+  });
+  return false;
+}
+
+/* FORM CONVERSION */
+function gtagReportFormConversion() {
+  gtag('event', 'conversion', {
+    'send_to': 'AW-16607386615/form_conversion'
+  });
+}
+</script>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pro-Tech Roofing Contractor & Assoc Inc.</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background:#0c3510;
+  color:white;
+  margin:0;
+}
+
+/* KEEP YOUR EXISTING DESIGN — only adding this */
+#thankYouSection {
+  display:none;
+  text-align:center;
+  padding:60px 20px;
+}
+
+#thankYouSection h1 {
+  color:#f5c800;
+}
+
+.call-btn {
+  display:inline-block;
+  padding:14px 28px;
+  background:#f5c800;
+  color:#0c3510;
+  text-decoration:none;
+  font-weight:bold;
+  border-radius:6px;
+  margin-top:15px;
+}
+</style>
+
+<script>
+function handleSubmit(event) {
+  event.preventDefault();
+
+  // FIRE CONVERSION
+  gtagReportFormConversion();
+
+  // SEND FORM (FormSubmit)
+  fetch(event.target.action, {
+    method: "POST",
+    body: new FormData(event.target),
+  });
+
+  // HIDE FORM SECTION (your original section)
+  document.getElementById("form-wrapper").style.display = "none";
+
+  // SHOW THANK YOU
+  document.getElementById("thankYouSection").style.display = "block";
+
+  // SCROLL TO TOP
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- =========================
+     KEEP YOUR ENTIRE WEBSITE
+     ABOVE THIS LINE UNCHANGED
+========================= -->
+
+
+<!-- 🔧 ONLY CHANGE YOUR FORM TO THIS -->
+<form id="form-wrapper"
+      action="https://formsubmit.co/Protechroofing03@gmail.com"
+      method="POST"
+      onsubmit="handleSubmit(event)">
+
+  <input type="hidden" name="_captcha" value="false">
+
+  <!-- KEEP YOUR EXISTING INPUTS -->
+  <input type="text" name="name" placeholder="Full Name" required>
+  <input type="tel" name="phone" placeholder="Phone" required>
+  <input type="email" name="email" placeholder="Email" required>
+
+  <button type="submit">Submit Request</button>
+</form>
+
+
+<!-- ✅ THANK YOU SECTION (AUTO SHOWS) -->
+<div id="thankYouSection">
+
+  <h2>Pro-Tech Roofing Contractor & Assoc Inc.</h2>
+  <p>LICENSE #CCC1329196</p>
+
+  <h1>Request Received!</h1>
+
+  <p>
+  Thank you for contacting Pro-Tech Roofing.<br>
+  Our team will reach out within <strong>1 business hour</strong> to schedule your free estimate.
+  </p>
+
+  <h3>What Happens Next</h3>
+
+  <p>1. We review your request</p>
+  <p>2. We call you back</p>
+  <p>3. Free on-site estimate</p>
+
+  <a href="tel:3059793688"
+     class="call-btn"
+     onclick="return gtagReportCallConversion('tel:3059793688');">
+     Need Faster Service? Call Now
+  </a>
+
+</div>
+
+
+<!-- 🔧 MAKE SURE ALL CALL BUTTONS USE THIS -->
+<a href="tel:3059793688"
+   onclick="return gtagReportCallConversion('tel:3059793688');">
+CALL NOW
+</a>
+
+
+</body>
+</html>
 <!-- ================================================
      GOOGLE ADS CONVERSION TRACKING
      Tag: AW-16607386615
